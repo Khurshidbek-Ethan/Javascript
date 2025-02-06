@@ -4,12 +4,9 @@
 // Bu murakkab funktsiyalarni sezilarli darajada soddalashtirishi mumkin
 // It can provide easy syntax to complex code
 // U murakkab kodga oson sintaksisni ta'minlaydi
-// 
+//
 // What is Web API?
 // API stands for Application Programming Interface.//API "Application Programming Interface" degan ma'noni anglatadi.
-
-
-
 
 // A Web API is an application programming interface for the Web.//Web API - bu Internet uchun dasturlash interfeysi.
 
@@ -20,7 +17,7 @@
 
 // Browser APIs
 // All browsers have a set of built-in Web APIs to support complex operations, and to help accessing data.
-//Barcha brauzerlarda murakkab operatsiyalarni qo'llab-quvvatlash va ma'lumotlarga kirishda yordam berish 
+//Barcha brauzerlarda murakkab operatsiyalarni qo'llab-quvvatlash va ma'lumotlarga kirishda yordam berish
 // uchun o'rnatilgan Web API-lar to'plami mavjud.
 // For example, the Geolocation API can return the coordinates of where the browser is located.
 // Masalan, Geolocation API brauzer joylashgan joyning koordinatalarini qaytarishi mumkin.
@@ -28,21 +25,24 @@
 // for example :Get the latitude and longitude of the user's position
 // for example :Foydalanuvchi joylashuvining kenglik va uzunligini oling
 
-// const x = document.getElementById("demo");
+// const x = document.getElementById('demo')
 
 // function getLocation() {
-//     try {
-//       navigator.geolocation.getCurrentPosition(showPosition);
-//     } catch(err) {
-//       x.innerHTML = err;
-//     }
-//   }
+// 	try {
+// 		navigator.geolocation.getCurrentPosition(showPosition)
+// 	} catch (err) {
+// 		x.innerHTML = err
+// 	}
+// }
 
-
-//   function showPosition(position) {
-//     x.innerHTML = "Latitude: " + position.coords.latitude + 
-//     "<br>Longitude: " + position.coords.longitude;
-//   }
+// function showPosition(position) {
+// 	x.innerHTML =
+// 		'Latitude: ' +
+// 		position.coords.latitude +
+// 		'<br>Longitude: ' +
+// 		position.coords.longitude
+// }
+// getLocation()
 ///////////////////////////////////
 // JavaScript Validation API
 // Constraint Validation DOM Methods// Cheklovlarni tekshirish DOM usullari
@@ -62,14 +62,14 @@
 //     }
 // }
 ///////
-// rangeOverflow()  100  past 
+// rangeOverflow()  100  past
 // function myFunction() {
 //   let text;
 //   if (document.getElementById("id1").validity.rangeOverflow) {
 //     text = "Value too large";
 //   } else {
 //     text = "Input OK";
-//   } 
+//   }
 //   document.getElementById("demo").innerHTML = text;
 // }
 ///////
@@ -77,7 +77,7 @@
 // function myFunction() {
 //     let text;
 //     if (document.getElementById("id1").validity.rangeUnderflow) {
-//        text  = "Value too small" 
+//        text  = "Value too small"
 //     } else {
 //         text = "Input OK"
 //     }
@@ -104,11 +104,11 @@
 // Web Storage API - bu brauzerda ma'lumotlarni saqlash va olish uchun oddiy sintaksis. Foydalanish juda oson:
 
 // The localStorage.setItem() method stores a data item in a storage.
-// localStorage.setItem("name", "John Doe")
+// localStorage.setItem('name', 'John Doe')
 
-// The localStorage.getItem() method retrieves a data item from the storage.
-// const getProperty = localStorage.getItem('name');
-// console.log(getProperty);
+// // The localStorage.getItem() method retrieves a data item from the storage.
+// const getProperty = localStorage.getItem('name')
+// console.log(getProperty)
 // sessionStorage.clear()
 
 /////
@@ -145,7 +145,7 @@
 // When executing scripts in an HTML page, the page becomes unresponsive until the script is finished.
 // HTML sahifasida skriptlarni bajarayotganda, skript tugaguniga qadar sahifa javob bermaydi.
 
-// A web worker is a JavaScript that runs in the background, independently of other scripts, without affecting 
+// A web worker is a JavaScript that runs in the background, independently of other scripts, without affecting
 // the performance of the page.You can continue to do whatever you want: clicking, selecting things, etc., while
 //  the web worker runs in the background.
 
@@ -154,7 +154,7 @@
 //     narsalarni tanlash va hokazo.
 
 ///////////////////////////////////////////////////////////
-// Fetch - Documention 
+// Fetch - Documention
 // JavaScript can send network requests to the server and load new information whenever it’s needed.
 // JavaScript serverga tarmoq so'rovlarini yuborishi va kerak bo'lganda yangi ma'lumotlarni yuklashi mumkin.
 // For example, we can use a network request to:// Misol uchun, biz tarmoq so'rovidan foydalanishimiz mumkin:
@@ -203,23 +203,21 @@
 // response.json() – parse the response as JSON,
 // response.formData() – return the response as FormData object // javobni FormData ob'ekti sifatida qaytaring (keyingi bobda tushuntirilgan),
 // response.blob() – return the response as Blob (binary data with type),// javobni Blob sifatida qaytaring (turi bilan ikkilik ma'lumotlar),
-// response.arrayBuffer() – return the response as ArrayBuffer (low-level representation of binary data),// javobni ArrayBuffer sifatida 
+// response.arrayBuffer() – return the response as ArrayBuffer (low-level representation of binary data),// javobni ArrayBuffer sifatida
 // qaytaring (ikkilik ma'lumotlarning past darajadagi namoyishi),
 // additionally, response.body is a ReadableStream object, it allows you to read the body chunk-by-chunk, we’ll see an example later.
 // qo'shimcha ravishda, respond.body - ReadableStream ob'ekti bo'lib, u tanani qismlarga bo'lib o'qish imkonini beradi, keyinroq misolni ko'rib chiqamiz.
 
-"use strict";
+// "use strict";
 
-const { response } = require('express')
+// const { response } = require('express')
 
-
-
-// (async () => {
-//     let url = 'https://api.github.com/repos/javascript-tutorial/en.javascript.info/commits'
-//     let response = await fetch(url);
-//     let commits = await response.json()
-//     alert(commits[0].author.login);
+// (async () => {let url ='https://api.github.com/repos/javascript-tutorial/en.javascript.info/commits'
+// 	let response = await fetch(url)
+// 	let commits = await response.json()
+// 	alert(commits[0].author.login)
 // })()
+
 ////
 // fetch('https://api.github.com/repos/javascript-tutorial/en.javascript.info/commits')
 //     .then(response => response.parse())
@@ -227,10 +225,9 @@ const { response } = require('express')
 
 //     (async () => {
 //         let response = await fetch("/IMAGE 2024-08-31 03:57:02.jpg")
-//         let blob = await response.blob();// download as Blob object// menimcha rasimni nameni boshqacha qilib qoyadi shekili
+//         let blob = await response.blob();// download as Blob object//
 // 			let img = document.getElementById('img')
-			
-			
+
 //         img.style = 'position:fixed;top:20px;left:10px;width:100px';
 //         document.body.append(img);
 
@@ -247,7 +244,7 @@ const { response } = require('express')
 // If we’ve already got the response with response.text(),
 // then response.json() won’t work, as the body content has already been processed.
 // Biz tanani o'qishning faqat bitta usulini tanlashimiz mumkin.
-// Agar biz allaqachon javob.text() bilan javob olgan bo'lsak, 
+// Agar biz allaqachon javob.text() bilan javob olgan bo'lsak,
 // javob.json() ishlamaydi, chunki asosiy tarkib allaqachon qayta ishlangan.
 
 // The response headers are available in a Map-like headers object in response.headers.
@@ -283,7 +280,7 @@ const { response } = require('express')
 // POST so'rovi yoki boshqa usul bilan so'rov yuborish uchun biz olib kelish opsiyalaridan foydalanishimiz kerak
 // * method – HTTP-method, e.g. POST,
 // * body – the request body, one of:
-//    *  a string (e.g. JSON-encoded),// 
+//    *  a string (e.g. JSON-encoded),//
 //    *  FormData object, to submit the data as multipart/form-data,//FormData ob'ekti, ma'lumotlarni ko'p qismli/forma-ma'lumotlar sifatida yuborish uchun,
 //    *  Blob/BufferSource to send binary data,// Blob/BufferSource ikkilik ma'lumotlarni yuborish uchun
 //    *  URLSearchParams, to submit the data in x-www-form-urlencoded encoding, rarely used.// URLSearchParams, ma'lumotlarni x-www-form-urlencoded kodlashda yuborish uchun, kamdan-kam ishlatiladi.
@@ -296,7 +293,7 @@ const { response } = require('express')
 // 		  name: 'John',
 //       surname: 'Smith',
 // 		}
-		
+
 // 		let response = fetch('/api/api.js/fetch/post/user', {
 // 			method: 'POST',
 // 			headers: {
@@ -305,7 +302,7 @@ const { response } = require('express')
 // 			body: JSON.stringify(user)
 
 // 		})
-		
+
 // 		let result = await response.json();
 // 		alert(result.message)
 // 	})()

@@ -1,35 +1,33 @@
 // JavaScript Switch Statement
 // Switch operatori har xil shartlarga asoslangan turli harakatlarni bajarish uchun ishlatiladi.
 
-// let day 
+// let day
 // switch (new Date().getDay()) {
-//     case 0:
-//         day = "Sunday";
-//         break;
-//     case 1:
-//         day = "Monday";
-//         break;
-//     case 2:
-//         day = "Tuesday";
-//         break;
-//     case 3:
-//         day = "Wednesday";
-//         break;
-//     case 4:
-//         day = "Thursday";
-//         break;
-//     case 5:
-//         day = "Friday";
-//         break;
-//     case 6:
-//         day = "Saturday";
-//         break;
-//     default:
-//         day = " Not Found Date"
-        
-
+// 	case 0:
+// 		day = 'Sunday'
+// 		break
+// 	case 1:
+// 		day = 'Monday'
+// 		break
+// 	case 2:
+// 		day = 'Tuesday'
+// 		break
+// 	case 3:
+// 		day = 'Wednesday'
+// 		break
+// 	case 4:
+// 		day = 'Thursday'
+// 		break
+// 	case 5:
+// 		day = 'Friday'
+// 		break
+// 	case 6:
+// 		day = 'Saturday'
+// 		break
+// 	default:
+// 		day = ' Not Found Date'
 // }
-// document.getElementById("ethan").innerHTML = "Today is " + day;
+// document.getElementById('ethan').innerHTML = 'Today is ' + day
 /////////////////////////////
 // let text;
 
@@ -59,7 +57,7 @@
 //         break;
 //     default:
 //         text = "Looking forward to the Weekend"
-   
+
 // }
 // document.getElementById("ethan").innerHTML = text;
 //////////////////////////

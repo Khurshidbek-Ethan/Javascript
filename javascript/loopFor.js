@@ -23,7 +23,7 @@
 
 // while - loops through a block of code while a specified condition is true
 //---> belgilangan shart rost bo'lganda kod bloki bo'ylab aylanadi
-  
+
 // do/while - also loops through a block of code while a specified condition is true
 // ---> do/while - belgilangan shart to'g'ri bo'lganda ham kod bloki orqali aylanadi
 //////////////////////////////
@@ -39,7 +39,7 @@
 // The JavaScript for in statement loops through the properties of an Object:
 // JavaScript for in bayonoti ob'ektning xususiyatlari bo'ylab aylanadi:
 //////
-// const person = { fname: "John", lname: "Doe", age: 25 }; 
+// const person = { fname: "John", lname: "Doe", age: 25 };
 // let text = "";
 // for (let x in person) {
 //     text += person[x] + "<br>"
@@ -57,13 +57,13 @@
 /////////// Do not use for in over an Array if the index order is important.
 ///////////The index order is implementation-dependent, and array values may not be accessed in the order you expect.
 ///////////It is better to use a for loop, a for of loop, or Array.forEach() when the order is important.
-// const numbers = [45, 4, 9, 16, 25];
-// let text = "";
+// const numbers = [45, 4, 9, 16, 25]
+// let text = ''
 // numbers.forEach(myFunction)
-// document.getElementById('ethan').innerHTML  = text
+// document.getElementById('ethan').innerHTML = text
 
-// function myFunction(value,index,array) {
-//     return text += value + "<br>"
+// function myFunction(value, index, array) {
+// 	return (text += value + '<br>')
 // }
 /////////////////////////////
 // JavaScript For Of
@@ -80,5 +80,3 @@
 // }
 // document.getElementById('ethan').innerHTML  = text
 /////////////////////////////////////
-
-

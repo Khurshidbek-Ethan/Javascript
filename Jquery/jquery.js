@@ -412,7 +412,7 @@
 ////////////////////
 // The following example demonstrates how to get the value of an input field with the jQuery val() method:
 // Quyidagi misol jQuery val() usuli yordamida kirish maydonining qiymatini qanday olish mumkinligini ko'rsatadi:
-
+//yani alertdagi inputga yoki inputdagi kiritilgan malumotni olib keladi
 // $(document).ready(function () {
 // 	$('button').click(function () {
 // 		alert($('#inputtest').val())

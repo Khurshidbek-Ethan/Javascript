@@ -1,10 +1,10 @@
 // The JavaScript Array Object
 
 // add new array value
-const array = []
-array[0] = 'BMW'
-array[1] = 'Mers'
-console.log(array) // ['BMW', 'Mers']
+// const array = []
+// array[0] = 'BMW'
+// array[1] = 'Mers'
+// console.log(array) // ['BMW', 'Mers']
 ///////////////////////////////////////
 // Quyidagi misol ham Massivni yaratadi va unga qiymatlarni tayinlaydi
 // const cars = new Array('BMW', 'Mers', 'Audi')
@@ -18,10 +18,10 @@ console.log(array) // ['BMW', 'Mers']
 // cars[0] = "BMW"
 // console.log(cars);//  ['BMW', 'Volvo', 'BMW']
 //////////////////////////////////////
-// const fruits = ["Banana", "Orange", "Apple", "Mango"];
-// console.log("fruits ->",typeof fruits); // object
+// const fruits = ['Banana', 'Orange', 'Apple', 'Mango']
+// console.log('fruits ->', typeof fruits) // object
 // const res = fruits.toString()
-// console.log("res ->",typeof res);// array
+// console.log('res ->', typeof res) // string
 
 /////////////////////////////////////////////
 // const fruits = ["Banana", "Orange", "Apple", "Mango"];
@@ -39,34 +39,35 @@ console.log(array) // ['BMW', 'Mers']
 // document.getElementById("ethan").innerHTML = t;
 // console.log(t);
 ////////////////////////////////////////////
-// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// const fruits = ['Banana', 'Orange', 'Apple', 'Mango']
 
-// let text = "<ul>";
-// fruits.forEach(myFunction);
-// text += "</ul>";
+// let text = '<ul>'
+// fruits.forEach(myFunction)
+// text += '</ul>'
 
-// document.getElementById("ethan").innerHTML = text;
+// document.getElementById('ethan').innerHTML = text
 
 // function myFunction(value) {
-//   text += "<li>" + value + "</li>";
+// 	text += '<li>' + value + '</li>'
 // }
 //////////////////////////////
 
 // The easiest way to add a new element to an array is using the push() method:
-// const fruits = ["Banana", "Orange", "Apple"];
+// const fruits = ['Banana', 'Orange', 'Apple']
 
-//  function myFunction () {
-//      fruits.push("Lemon");
-//      document.getElementById('ethan').innerHTML = fruits
+// function myFunction() {
+// 	fruits.push('Lemon')
+// 	document.getElementById('ethan').innerHTML = fruits
 // }
+// myFunction()
 
 //////
 
-// const fruits = ["Banana", "Orange", "Apple"];
+// const fruits = ['Banana', 'Orange', 'Apple']
 
 // function myFunction() {
-//     fruits[fruits.length] = "Lemon"
-//     document.getElementById('ethan').innerHTML = fruits
+// 	fruits[fruits.length] = 'Lemon'
+// 	document.getElementById('ethan').innerHTML = fruits
 // }
 
 ////////////////////////////////
@@ -76,32 +77,36 @@ console.log(array) // ['BMW', 'Mers']
 // console.log(res); // true
 ///////////////////////////////////
 // Agar ob'ekt berilgan konstruksiya tomonidan yaratilgan bo'lsa, instanceof operatori true qiymatini qaytaradi
-// const array = new Array("apples", "bananas", "oranges") // true
-// const fruits = ["apples", "bananas", "oranges"];// true
-// const res = array instanceof Array
-// console.log(res);
+// const array = new Array('apples', 'bananas', 'oranges') // true
+// const fruits = ['apples', 'bananas', 'oranges'] // true
+// const number = 3
+// const res = array instanceof Array //true
+// const res = fruits instanceof Array //true
+// const res = number instanceof Array // false
+
+// console.log(res)
 //////////////////////////////////////
 
-// let x = "";
+// let x = ''
 // const obj = {
-//     name: "Ethan",
-//     age: 32,
-//     cars: [
-//         {name:"Ford",models:["Fiesta","Focus","Mustang"]},
-//         {name:"BMW",models:["320","x3","x5"]},
-//         {name:"Fiat",models:["500","Panda"]}
-//     ]
+// 	name: 'Ethan',
+// 	age: 32,
+// 	cars: [
+// 		{ name: 'Ford', models: ['Fiesta', 'Focus', 'Mustang'] },
+// 		{ name: 'BMW', models: ['320', 'x3', 'x5'] },
+// 		{ name: 'Fiat', models: ['500', 'Panda'] },
+// 	],
 // }
 
 // for (let i in obj.cars) {
-//     x += '<h2>' + obj.cars[i].name + "</h2>"
-//     for (let j in obj.cars[i].models) {
-//         x+=obj.cars[i].models[j] +"<br>"
-//     }
+// 	x += '<h2>' + obj.cars[i].name + '</h2>'
+// 	for (let j in obj.cars[i].models) {
+// 		x += obj.cars[i].models[j] + '<br>'
+// 	}
 // }
-// console.log(x);
+// console.log(x)
 
-// document.getElementById("ethan").innerHTML = x;
+// document.getElementById('ethan').innerHTML = x
 
 //////////////////////////////////////////////////
 // add new array
@@ -151,10 +156,10 @@ console.log(array) // ['BMW', 'Mers']
 // const res = arr1.concat(arr2)
 // console.log(res);// ['Cecilie', 'Lone', 1, 2, 3]
 /////////////////
-// const arr1 = [1, 2, [3, 4]];
-// const arr2 = [[5, 6], 7, 8];
+// const arr1 = [1, 2, [3, 4]]
+// const arr2 = [[5, 6], 7, 8]
 // const res = arr1.concat(arr2)
-// console.log(res);// [1, 2, Array(2), Array(2), 7, 8]// Array(2) = [3,4],Array(2) = [5,6]
+// console.log(res) // [1, 2, Array(2), Array(2), 7, 8]// Array(2) = [3,4],Array(2) = [5,6]
 // document.getElementById('ethan').innerHTML = res // diplayda 1 dan 8 gacha
 /////////////////////////////////
 // The constructor property returns the function that created the Array prototype.
@@ -166,34 +171,34 @@ console.log(array) // ['BMW', 'Mers']
 // Array copyWithin()  copyWithin() usuli massiv elementlarini massivning boshqa pozitsiyasiga nusxalaydi
 // array.copyWithin(target, start, end)
 
-// const fruits = ["Banana", "Orange", "Apple", "Mango"];
-// const res = fruits.copyWithin(0, 2,3) // 2 index va 3 index oraligidagi valueni 0 indexga qoyyapdi
-// console.log(res);
+// const fruits = ['Banana', 'Orange', 'Apple', 'Mango']
+// const res = fruits.copyWithin(0, 2, 3) // 2 index va 3 index oraligidagi valueni 0 indexga qoyyapdi
+// console.log(res)
 //////////////////////////////////
 // entries() method returns an Iterator object with the key/value pairs from an array:
 // entries() usuli massivdagi kalit/qiymat juftlari bilan Iterator obyektini qaytaradi:
-// const fruits = ["Banana", "Orange", "Apple", "Mango"];
-// console.log(fruits);
+// const fruits = ['Banana', 'Orange', 'Apple', 'Mango']
+// console.log(typeof fruits) // object
 
-// const res = fruits.entries()// Array Iterator
-// console.log(res);
+// const res = fruits.entries() // Array Iterator
+// console.log(res) // Array Iterator object
 
-// let x = ""
+// let x = ''
 // for (let i of res) {
-//     x += i +"<br>"
+// 	x += i + '<br>'
 // }
 // document.getElementById('ethan').innerHTML = x
-////
-// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// ////
+// const fruits = ['Banana', 'Orange', 'Apple', 'Mango']
 
 // const res = Object.entries(fruits) // arrayni ichiga array qilib beradikan
-// console.log(res);
+// console.log(res)
 
-// let x = ""
+// let x = ''
 // for (let i of res) {
-//     x+=i +"<br>"
+// 	x += i + '<br>'
 // }
-// console.log(x);
+// console.log(x)
 // document.getElementById('ethan').innerHTML = x
 ///////////////////////////////
 // The every() method executes a function for each array element.
@@ -221,8 +226,8 @@ console.log(array) // ['BMW', 'Mers']
 // }
 ///////////////
 // fill() ozgartiradi valularini // fill(value, start, end)
-// const fruits = ["Banana", "Orange", "Apple", "Mango"];
-// document.getElementById("ethan").innerHTML = fruits.fill("Kiwi"); // Kiwi,Kiwi,Kiwi,Kiwi
+// const fruits = ['Banana', 'Orange', 'Apple', 'Mango']
+// document.getElementById('ethan').innerHTML = fruits.fill('Kiwi') // Kiwi,Kiwi,Kiwi,Kiwi
 ///////////////////////
 // The filter() method creates a new array filled with elements that pass a test provided by a function.
 // usul funksiya tomonidan taqdim etilgan testdan o'tgan elementlar bilan to'ldirilgan yangi massivni yaratadi.
@@ -245,12 +250,12 @@ console.log(array) // ['BMW', 'Mers']
 ///////////////////////////
 // find() usuli sinovdan o'tgan birinchi elementning qiymatini qaytaradi
 // The find() method executes a function for each array element.find() usuli har bir massiv elementi uchun funksiyani bajaradi.
-// const ages = [3, 11, 21, 18];
+// const ages = [3, 11, 21, 18, 32, 33]
 
 // document.getElementById('ethan').innerHTML = ages.find(checkAge) // birinchi testdan otgan 21 boldi oshani chiqardi
 
 // function checkAge(age) {
-//     return age > 18
+// 	return age > 18
 // }
 
 // const ages = [3, 11, 21, 18];
@@ -270,9 +275,9 @@ console.log(array) // ['BMW', 'Mers']
 // const res = myArr.flat()
 // console.log(res);// [1, 2, 3, 4, 5, 6]ichki arraydan olib beradi array qilib beradi
 ///
-// const myArr = [1, 2, [3, [4, 5, 6], 7], 8];
-// const res = myArr.flat(2)// array ichida 2 ta array bolgani un 2 ta arrayni olib beradi
-// console.log(res);
+// const myArr = [1, 2, [3, [4, 5, 6], 7], 8]
+// const res = myArr.flat(2) // array ichida 2 ta array bolgani un 2 ta arrayni olib beradi
+// console.log(res)
 ///////////////////////////
 // flatMap() method maps all array elements and creates a new flat array.
 // xar bir array elemetini map qilib beradi
@@ -333,25 +338,25 @@ console.log(array) // ['BMW', 'Mers']
 // console.log(res); // true
 /////////////////////////////////////////////////////////
 // join() method returns an array as a string.// join() usuli qatorni satr sifatida qaytaradi.
-// const fruits = ["Banana", "Orange", "Apple", "Mango"];
-// const res = fruits.join() //
-// console.log(typeof res);
-// console.log(res);
+// const fruits = ['Banana', 'Orange', 'Apple', 'Mango']
+// const res = fruits.join()
+// console.log(typeof res)
+// console.log(res)
 // //////////////////////
 // const fruits = ["Banana", "Orange", "Apple", "Mango"];
 // const res = fruits.join(" + ")
 // console.log(res);/// Banana + Orange + Apple + Mango
 /////////////////////////////////////////////
 // The keys() method returns an Iterator object with the keys of an array.
-// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// const fruits = ['Banana', 'Orange', 'Apple', 'Mango']
 // const res = fruits.keys()
-// console.log(res);//
-// let x = ""
+// console.log(res) //
+// let x = ''
 // for (let i of res) {
-//     x+= i +"<br>"
+// 	x += i + '<br>'
 // }
 // document.getElementById('ethan').innerHTML = x
-// console.log(x);
+// console.log(x)
 //////////////////////////////////
 // map() creates a new array from calling a function for every array element.
 // const numbers = [65, 44, 12, 4];
@@ -380,8 +385,8 @@ console.log(array) // ['BMW', 'Mers']
 // Array.of() method creates a new array from any number of arguments.
 // Array.of() method can take any type of arguments.
 // Array.of(element1, element2, ... , elementN)
-// const newArray = Array.of("Banana", "Orange", "Apple", "Mango")
-// console.log(newArray);// ['Banana', 'Orange', 'Apple', 'Mango']
+// const newArray = Array.of('Banana', 'Orange', 'Apple', 'Mango', 32)
+// console.log(newArray) // ['Banana', 'Orange', 'Apple', 'Mango',32]
 /////////////////////////////
 // pop() method removes (pops) the last element of an array
 // pop() method returns the removed element.
@@ -395,14 +400,14 @@ console.log(array) // ['BMW', 'Mers']
 //prototype is a property available with all JavaScript objects.
 
 // Array.prototype.myFunction = function () {
-//     for (let i = 0; i < i.length; i++){
-//          this[i] += this[i].toUpperCase
-//     }
+// 	for (let i = 0; i < i.length; i++) {
+// 		this[i] += this[i].toUpperCase
+// 	}
 // }
-// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// const fruits = ['Banana', 'Orange', 'Apple', 'Mango']
 // fruits.myFunction()
-// console.log(fruits);
-// document.getElementById("ethan").innerHTML = fruits;
+// console.log(fruits)
+// document.getElementById('ethan').innerHTML = fruits
 ///////////////////////////////////////////
 // push() method adds new items to the end of an array.
 // const fruits = ["Banana", "Orange", "Apple", "Mango"];
@@ -416,13 +421,15 @@ console.log(array) // ['BMW', 'Mers']
 // reduce() method returns a single value: the function's accumulated result.
 // reduce() usuli bitta qiymatni qaytaradi: funktsiyaning to'plangan natijasini
 // bizga sonlarni qoshib beradi
-// const numbers = [150, 40, 15];
+// const numbers = [150, 40, 15]
 // const res = numbers.reduce(myFunction)
 
-// function myFunction(total,num) {
-//     return total - num
+// function myFunction(total, num) {
+// 	console.log('total', total)
+// 	console.log('num', num)
+// 	return total - num
 // }
-// console.log(res);
+// console.log(res)
 
 // document.getElementById('ethan').innerHTML = res
 /////
@@ -460,14 +467,14 @@ console.log(array) // ['BMW', 'Mers']
 // some() usuli har qanday massiv elementlari testdan o'tganligini tekshiradi (qayta qo'ng'iroq funktsiyasi sifatida taqdim etilgan).
 // usuli har bir massiv elementi uchun bir marta qayta qo'ng'iroq qilish funksiyasini bajaradi.
 // returns boolean xammasi check bolgandan ekyin true or false
-// const ages = [3, 10, 18, 20];
+// const ages = [3, 10, 18, 20]
 // const res = ages.some(myFunction)
 
 // function myFunction(age) {
-//     return age > 18
+// 	return age > 18
 // }
 
-// console.log(res); // true
+// console.log(res) // true
 //////
 // const numbers = [4, 12, 16, 20];
 
@@ -545,12 +552,14 @@ console.log(array) // ['BMW', 'Mers']
 // document.getElementById('ethan').innerHTML = text
 ///////////////////////////////////////////////////////////
 // valueOf() method returns the array itself.
-// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// const fruits = ['Banana', 'Orange', 'Apple', 'Mango']
+// console.log(fruits)
+
 // document.getElementById('ethan').innerHTML = fruits.valueOf() // valularini chiqarib beradi
-//////////////////////////////////////////////////
+////////////////////////////////////////////////
 // with() method updates a specified array element.
 // usul belgilangan massiv elementini yangilaydi.
-// const months = ["Januar", "Februar", "Mar", "April"];
-// document.getElementById('ethan').innerHTML = months.with(2, "March")
-// const res = months.with(2, "March")
-// console.log(res);// ['Januar', 'Februar', 'March', 'April']
+// const months = ['Januar', 'Februar', 'Mar', 'April']
+// document.getElementById('ethan').innerHTML = months.with(2, 'March')
+// const res = months.with(2, 'March')
+// console.log(res) // ['Januar', 'Februar', 'March', 'April']

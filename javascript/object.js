@@ -131,7 +131,7 @@
 
 ///////////////////////////////////////////////////
 // The Object.assign() method copies properties from one or more source objects to a target object.
-// // JavaScript Object.assign() // 2 objectni  bir biriga qoshib beradi
+// // JavaScript Object.assign() // 2 objectni  ikkilas objectdan copy qilib bitta object yasab  beradi
 
 // const per1 = {
 //     firstName: "Anne",
@@ -155,20 +155,19 @@
 // The constructor property returns the function that created the Object prototype.
 
 // const person = {
-//     firstName: "John",
-//     lastName: "Doe",
-//     age: 50,
-//     eyeColor: "blue"
-
-//   };
-//   const res2=Object.defineProperty(person,'color',{value:'red'})
-// let text = person.constructor;
-// const res1=Object.defineProperty(text,'color',{value:'red'})
+// 	firstName: 'John',
+// 	lastName: 'Doe',
+// 	age: 50,
+// 	eyeColor: 'blue',
+// }
+// const res2 = Object.defineProperty(person, 'color', { value: 'red' })
+// let text = person.constructor
+// const res1 = Object.defineProperty(text, 'color', { value: 'red' })
 // // let res = text.firstName
 
-// console.log();
+// console.log(res2)
 
-// document.getElementById("ethan").innerHTML = text;
+// document.getElementById('ethan').innerHTML = text
 
 //////////////////////////////////////////////////////////
 // Object.create() mavjud objectdan object yaratadi
@@ -185,7 +184,7 @@
 // document.getElementById("ethan").innerHTML = person.name + " and " + man.name;
 
 ///////////////////////////////////////////////////////////////////
-// The Object.defineProperties() method adds or changes object properties.methodni qoshadi  va propertlarni ozgartirishi mumkin
+// The Object.defineProperties() method adds or changes object properties.methodga qoshadi  va propertlarni ozgartirishi mumkin
 // usuli ob'ekt xususiyatlarini qo'shadi yoki o'zgartiradi.
 
 // const person = {
@@ -343,10 +342,12 @@
 // The Object.entries() value pairs of an object.
 
 // const person = {
-//     firstName: "Hurshidbek",
-//     lastName: "Arapov",
+// 	firstName: 'Hurshidbek',
+// 	lastName: 'Arapov',
 // }
-// const getObj=Object.entries(person)
+// const getObj = Object.entries(person)
+// console.log(getObj)
+
 // document.getElementById('ethan').innerHTML = getObj
 
 ////////////////////////////////////////////
@@ -481,51 +482,54 @@
 // Asl va qaytarilgan ob'ektdagi elementlar bir xil.O'zgarishlar asl nusxada ham, qaytarilgan ob'ektda ham aks etadi
 // arrayni ichidagi objectlarni gruhlab olish
 // const fruits = [
-//     { name: "apples", quantity: 300 },
-//     { name: "bannas", quantity: 500 },
-//     { name: "oranges", quantity: 200 },
-//     {name: "kiwi", quantity: 150 }
+// 	{ name: 'apples', quantity: 300 },
+// 	{ name: 'bannas', quantity: 500 },
+// 	{ name: 'oranges', quantity: 200 },
+// 	{ name: 'kiwi', quantity: 150 },
 // ]
 
 // function myCallback({ quantity }) {
-//     return quantity > 200 ? "ok" : "low";
-//   }
+// 	return quantity > 200 ? 'ok' : 'low'
+// }
 
 // // Group by ok and low
-// const result = Object.groupBy(fruits, myCallback);
+// const result = Object.groupBy(fruits, myCallback)
 
 // // Display Results
-// let text ="These fruits are Ok: <br>";
-// for (let [x,y] of result.ok.entries()) {
-//   text += y.name + " " + y.quantity + "<br>";
+// let text = 'These fruits are Ok: <br>'
+// for (let [x, y] of result.ok.entries()) {
+// 	text += y.name + ' ' + y.quantity + '<br>'
 // }
 
-// text += "<br>These fruits are low: <br>";
-// for (let [x,y] of result.low.entries()) {
-//   text += y.name + " " + y.quantity + "<br>";
+// text += '<br>These fruits are low: <br>'
+// for (let [x, y] of result.low.entries()) {
+// 	text += y.name + ' ' + y.quantity + '<br>'
 // }
 
-// document.getElementById("ethan").innerHTML = text;
+// document.getElementById('ethan').innerHTML = text
 
 ///////////////////////////////////////////////////////////
 
 // JavaScript Object.isExtensible()  objectni kengaytirsa boladimi yo yomi boolean qayatardi
-// Object.preventExtensions() objectni ozgartirishga ruxsat beradi lekin add qilolmeymiz lekin delete qilolamiz
+// Object.preventExtensions() objectni ozgartirishga ruxsat beradi va  delete qilolamiz lekin add qilolmeymiz
 //object
-// const person = {
-//     firstName: "Hurshidbek",
-//     lastName:"Arapov"
+// const person1 = {
+// 	firstName: 'Hurshidbek',
+// 	lastName: 'Arapov',
 // }
-// Object.preventExtensions(person)
-// delete person.firstName
-// console.log(person);
+// Object.preventExtensions(person1)
+// person1.firstName = 'Ethan' // ruxsat beradi
+// person1.age = 32 // ruxsat  bermeydi
+// delete person1.lastName // delete qilolamiz
+// console.log(person1)
 
 // let result = Object.isExtensible(person)
+// console.log(result)
 
 // document.getElementById('ethan').innerHTML = result
 
 // array
-// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// const fruits = ['Banana', 'Orange', 'Apple', 'Mango']
 // Object.preventExtensions(fruits)
 
 // const result = Object.isExtensible(fruits)
@@ -535,8 +539,8 @@
 // The Object.isFrozen() returns true if an object is frozen.  muzlatilganligini tekshiradi boolean qaytaradi
 //object
 // const person = {
-//     firstName: "Hurshidbek",
-//     lastName:"Arapov"
+// 	firstName: 'Hurshidbek',
+// 	lastName: 'Arapov',
 // }
 
 // Object.freeze(person)
@@ -658,21 +662,22 @@
 // Prototip xususiyati ob'ektlarga yangi xususiyatlar va usullarni qo'shish imkonini beradi.
 // object
 // const person = {
-//     firstName: "Hurshidbek",
-//     last:'Arapov'
+// 	firstName: 'Hurshidbek',
+// 	last: 'Arapov',
 // }
 // Object.prototype.age = 32
 // document.getElementById('ethan').innerHTML = person.age
 
-//// function
-// function addNewObject(firstName,lastName) {
-//     this.firstName = firstName;
-//     this.lastName = lastName;
+// // function
+// function addNewObject(firstName, lastName, age) {
+// 	this.firstName = firstName
+// 	this.lastName = lastName
+// 	this.age = age
 // }
 
 // Object.prototype.age = 32
-// const obj = new addNewObject('Hurshidbek', 'arapov')
-// document.getElementById("ethan").innerHTML = obj.age;
+// const obj = new addNewObject('Hurshidbek', 'arapov', age)
+// document.getElementById('ethan').innerHTML = obj.age
 
 ///////////////////////////////////////////////////
 
@@ -681,15 +686,16 @@
 // "use strict"
 // // Create Object
 // const person = {
-//   firstName: "John",
-//   lastName: "Doe",
-//   age: 50,
-//   eyeColor: "blue"
-// };
+// 	firstName: 'John',
+// 	lastName: 'Doe',
+// 	age: 50,
+// 	eyeColor: 'blue',
+// }
 
 // Object.seal(person)
+// person.age = 23
 // delete person.age // deletegaham  ruxsat bermeydi
-// console.log(person);
+// console.log(person)
 
 // let text = "";
 // try {
@@ -712,13 +718,13 @@
 
 //obj
 // const person = {
-//     firstName: "John",
-//     lastName: "Doe",
-//     age: 50,
-//     eyeColor: "blue"
-//   };
+// 	firstName: 'John',
+// 	lastName: 'Doe',
+// 	age: 50,
+// 	eyeColor: 'blue',
+// }
 // const keys = person.toString()
-// console.log(keys);
+// console.log(keys)
 
 //   document.getElementById('ethan').innerHTML = keys.firstName// [object Object]
 
@@ -739,9 +745,9 @@
 // If the object has no primitive value, valueOf() returns the object itself.
 // The valueOf() method returns the primitive value of an object.
 // faqat valuelarni olib beradikan
-// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// const fruits = ['Banana', 'Orange', 'Apple', 'Mango']
 // Object.valueOf(fruits)
-// console.log(fruits);
+// console.log(fruits)
 
 // document.getElementById('ethan').innerHTML = fruits
 

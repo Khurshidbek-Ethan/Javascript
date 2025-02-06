@@ -2,18 +2,20 @@
 // Iterating over an Array
 
 // Iterating Over a String
-// const name = "W3Schools";
-// let text = "";
+// const name = 'W3Schools'
+// let text = ''
 // for (const i of name) {
-//     text += i + "<br>"
+// 	text += i + '<br>'
 // }
+// console.log(text)
+
 // document.getElementById('ethan').innerHTML = text
 ///
 // Iterating Over an Array
-// const letters = ["a", "b", "c"];
-// let text = ""
+// const letters = ['a', 'b', 'c']
+// let text = ''
 // for (let i of letters) {
-//     text += i + "<br>"
+// 	text += i + '<br>'
 // }
 // document.getElementById('ethan').innerHTML = text
 ////////////
@@ -25,22 +27,24 @@
 // document.getElementById('ethan').innerHTML = text
 ////////
 // Over a Set
-// const letter = new Set(["a", "b", "c"]);
-// let text = "";
+// const letter = new Set(['a', 'b', 'c'])
+// let text = ''
 // for (let i of letter) {
-//     text += i + "<br>"
+// 	text += i + '<br>'
 // }
 // document.getElementById('ethan').innerHTML = text
 ///////////////////////
 // const mapFruit = new Map([
-//     ["apples", 500],
-//     ["bananas", 300],
-//     ["oranges", 200]]
-// );
-// let text = "";
+// 	['apples', 500],
+// 	['bananas', 300],
+// 	['oranges', 200],
+// ])
+// let text = ''
 // for (let i of mapFruit) {
-//     text += i + "<br>"
+// 	text += i + '<br>'
 // }
+// console.log(text)
+
 // document.getElementById('ethan').innerHTML = text
 //////////////////////////
 // const fruits = new Map([
@@ -48,7 +52,7 @@
 //     ["bananas", 300],
 //     ["oranges", 200]
 // ]);
-  
+
 // let text = "";
 
 // for (let i of fruits) {

@@ -7,7 +7,7 @@
 // isFinite()  number ligini tekshiradi boolean qaytaradi
 // let num = 23123234
 // const res = Number.isFinite(num)
-// console.log(res);// true 
+// console.log(res);// true
 
 ////
 // let numString = "324324"
@@ -30,13 +30,13 @@
 // Number.parseFloat() method parses a value as a string and returns the first number
 // Number.parseFloat() usuli qiymatni satr sifatida tahlil qiladi va birinchi raqamni qaytaradi.
 // document.getElementById("ethan").innerHTML =
-//     Number.parseFloat(10) + "<br>" + //10
-//     Number.parseFloat("10") + "<br>" + //10
-//     Number.parseFloat("10.33") + "<br>" + //10.33
-//     Number.parseFloat("34 45 66") + "<br>" +  //34 
-//     Number.parseFloat("40 years") + "<br>" +  //40
-//     Number.parseFloat("40H") + "<br>" +  // 40
-//     Number.parseFloat("How are 40") // NaN
+// Number.parseFloat(10) + "<br>" + //10
+// Number.parseFloat("10") + "<br>" + //10
+// Number.parseFloat("10.33") + "<br>" + //10.33
+// Number.parseFloat("34 45 66") + "<br>" +  //34
+// Number.parseFloat("40 years") + "<br>" +  //40
+// Number.parseFloat("40H") + "<br>" +  // 40
+// Number.parseFloat("How are 40") // NaN
 
 ///////////////////////////////////////////
 // Number.parseInt()  usuli qiymatni satr sifatida tahlil qiladi va birinchi butun sonni qaytaradi.
@@ -55,13 +55,15 @@
 // }
 
 // let n = 50
-// console.log(n.myMthod()); // 25 
+// console.log(n.myMthod()); // 25
 ///////////////////////////////////////////////
 // toFixed()    numberni stringga ozgartirib beradi
 // let n = 5.5545
 
 // const res = n.toFixed()
-// console.log(typeof res); // 
+// console.log(res) // 6
+
+// console.log(typeof res) //
 /////////////////////////////////////////
 // toLocaleString() mahalliy til formatidan foydalangan holda raqamni qator sifatida qaytaradi.
 // let num = 10000
@@ -76,8 +78,8 @@
 //     style: "currency",
 //     currency:"EUR"
 // }
-// const res = num.toLocaleString("en-GB", obj)
-// console.log(res); //€500.00 string xolatda 
+// const res = num.toLocaleString('en-GB', obj)
+// console.log(res) //€500.00 string xolatda
 ////////////////////////////////////////////////////////
 // The toString() returns a number as a string
 // let num = 14
@@ -88,9 +90,10 @@
 // valueOf() usuli raqamning ibtidoiy qiymatini qaytaradi.valularini olibberadi
 // let num = 15
 // const res = num.valueOf()
-// console.log(res);
+// console.log(res)
+
 ///////////////
 
-// let x = 9999999999999999;
-// let y = BigInt("9999999999999999");
+// let x = 9999999999999999
+// let y = BigInt('9999999999999999')
 // console.log(typeof y)

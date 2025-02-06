@@ -5,22 +5,22 @@
 //     document.getElementById('ethan').innerHTML = "Good Day!"
 // } else {
 //     document.getElementById('ethan').innerHTML = "Good evining!"
-    
+
 // }
 ///////////////// same
 
-// const hour = new Date().getHours(); 
-// let geting;
+// const hour = new Date().getHours()
+// let geting
 
 // if (hour < 18) {
-//     geting = "Good Day!"
+// 	geting = 'Good Day!'
 // } else {
-//     geting = "Good evining!"
+// 	geting = 'Good evining!'
 // }
 
-// document.getElementById("ethan").innerHTML = geting;
+// document.getElementById('ethan').innerHTML = geting
 
-//////////// 
+////////////
 // const hour = new Date().getHours()
 // let greeting;
 
@@ -34,4 +34,3 @@
 // document.getElementById("ethan").innerHTML = greeting;
 
 ////////////////
-
